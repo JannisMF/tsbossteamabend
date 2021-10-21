@@ -14,7 +14,15 @@ export class PlayerDataService {
     return of(PLAYERS)
   }
 
-  getProgress():number{
-    return Math.random()
+  getPlayer(id:number){
+
+  }
+
+  getProgress():Observable<number>{
+    return of(Math.random()*100)
+  }
+
+  changePlayer(style:number,player:Player){
+
   }
 }
