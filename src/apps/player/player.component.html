@@ -1,0 +1,22 @@
+<div *ngIf="player" style="font-size: 20px">
+  Player {{player.id}}
+  <ng-container *ngFor="let item of generateLiveCountArray(player.lives)">
+    <img  class="images" src="../../assets/resources/img/HealthFilled.png" style="width: 20px;height: 20px"/>
+  </ng-container>
+  <ng-container *ngFor="let item of generateLiveCountArray(10-player.lives)">
+    <img  class="images" src="../../assets/resources/img/HealthEmpty.png" style="width: 20px;height: 20px"/>
+  </ng-container>
+  <ng-container *ngFor="let item of generateLiveCountArray(player.saturation)">
+    <img  class="images" src="../../assets/resources/img/FoodFilled.png" style="width: 20px;height: 20px"/>
+  </ng-container>
+  <ng-container *ngFor="let item of generateLiveCountArray(10-player.saturation)">
+    <img  class="images" src="../../assets/resources/img/FoodEmpty.png" style="width: 20px;height: 20px"/>
+  </ng-container>
+  <ng-container *ngFor="let item of generateLiveCountArray(player.shield)">
+    <img  class="images" src="../../assets/resources/img/ArmorFilled.png" style="width: 20px;height: 20px"/>
+  </ng-container>
+  <ng-container *ngFor="let item of generateLiveCountArray(10-player.shield)">
+    <img  class="images" src="../../assets/resources/img/ArmorEmpty.png" style="width: 20px;height: 20px"/>
+  </ng-container>
+
+</div>
