@@ -11,9 +11,14 @@ import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {ProgressBarModule} from "angular-progress-bar";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgbProgressbarModule} from "@ng-bootstrap/ng-bootstrap";
-import { PlayerControllerComponent } from '../apps/player-controller/player-controller.component';
+
+import { AppRoutingModule } from './app-routing.module';
+import {PlayerControllerComponent} from "../apps/player-controller/player-controller.component";
 
 
+
+// @ts-ignore
+// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +34,8 @@ import { PlayerControllerComponent } from '../apps/player-controller/player-cont
     MatProgressSpinnerModule,
     ProgressBarModule,
     NgbModule,
-    NgbProgressbarModule
+    NgbProgressbarModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
