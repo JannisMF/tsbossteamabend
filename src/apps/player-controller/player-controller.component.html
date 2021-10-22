@@ -1,0 +1,9 @@
+<div *ngIf="player">
+  <app-player [player]="player"></app-player>
+  <img src="../../assets/resources/img/AddHealth.png" (click)="changePlayer(2)">
+  <img src="../../assets/resources/img/RemoveHealth.png" (click)="changePlayer(1)">
+  <img src="../../assets/resources/img/FillFood.png" (click)="changePlayer(4)">
+  <img src="../../assets/resources/img/RemoveFood.png" (click)="changePlayer(3)">
+  <img src="../../assets/resources/img/AddArmor.png" (click)="changePlayer(5)">
+</div>
+
